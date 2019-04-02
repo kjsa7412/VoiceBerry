@@ -1,0 +1,362 @@
+﻿<Page
+    x:Class="voice.ActivityPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Height="580" Margin="0,0.333,0,0" VerticalAlignment="Top">
+    	<Canvas HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400">
+    		<Grid x:Name="Grid_Page1" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400" RenderTransformOrigin="0.5,0.5">
+    			<Grid.RenderTransform>
+    				<CompositeTransform/>
+    			</Grid.RenderTransform>
+    			<Grid.Background>
+    				<ImageBrush Stretch="Fill" ImageSource="Assets/history_page/back_home.jpg"/>
+    			</Grid.Background>
+    			<Image x:Name="Img_Tree" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400" IsHitTestVisible="False" Source="Assets/history_page/tree_4.png"/>
+    			<Image x:Name="Img_Berry1" HorizontalAlignment="Left" Height="36" Margin="309,492,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry2" HorizontalAlignment="Left" Height="36" Margin="249,438,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry3" HorizontalAlignment="Left" Height="36" Margin="89,411,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry4" HorizontalAlignment="Left" Height="36" Margin="314,364,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry5" HorizontalAlignment="Left" Height="36" Margin="71,337,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry6" HorizontalAlignment="Left" Height="36" Margin="247,359,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry7" HorizontalAlignment="Left" Height="36" Margin="271,291,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry8" HorizontalAlignment="Left" Height="36" Margin="102,277,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry9" HorizontalAlignment="Left" Height="36" Margin="264,203,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry10" HorizontalAlignment="Left" Height="36" Margin="70,177,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry11" HorizontalAlignment="Left" Height="36" Margin="138,125,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry12" HorizontalAlignment="Left" Height="36" Margin="248,103,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry13" HorizontalAlignment="Left" Height="36" Margin="321,103,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry14" HorizontalAlignment="Left" Height="36" Margin="83,63,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry15" HorizontalAlignment="Left" Height="36" Margin="220,36,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Canvas HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400">
+    				<Image x:Name="Img_Dog" HorizontalAlignment="Left" Height="61" VerticalAlignment="Top" Width="102" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Left="35" Canvas.Top="489">
+    					<Image.RenderTransform>
+    						<CompositeTransform/>
+    					</Image.RenderTransform>
+    				</Image>
+    			</Canvas>
+    			<Grid x:Name="Grid_Detail1" HorizontalAlignment="Left" Height="42" Margin="292,528,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail2" HorizontalAlignment="Left" Height="42" Margin="232,475,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name1" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time1" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date1" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail3" HorizontalAlignment="Left" Height="42" Margin="71,449,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name2" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time2" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date2" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail4" HorizontalAlignment="Left" Height="42" Margin="297,402,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name3" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time3" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date3" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail5" HorizontalAlignment="Left" Height="42" Margin="53,373,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name5" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time5" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date5" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail6" HorizontalAlignment="Left" Height="42" Margin="228,396,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name6" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time6" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date6" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail7" HorizontalAlignment="Left" Height="42" Margin="253,328,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name7" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time7" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date7" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail8" HorizontalAlignment="Left" Height="42" Margin="83,314,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name8" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time8" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date8" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail9" HorizontalAlignment="Left" Height="42" Margin="247,240,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name9" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time9" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date9" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail10" HorizontalAlignment="Left" Height="42" Margin="53,214,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name10" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time10" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date10" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail11" HorizontalAlignment="Left" Height="42" Margin="121,162,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name11" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time11" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date11" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail12" HorizontalAlignment="Left" Height="42" Margin="304,142,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name12" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time12" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date12" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail13" HorizontalAlignment="Left" Height="42" Margin="231,141,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name13" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time13" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date13" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail14" HorizontalAlignment="Left" Height="42" Margin="66,100,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name14" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time14" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date14" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail15" HorizontalAlignment="Left" Height="42" Margin="203,72,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name15" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time15" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date15" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    		</Grid>
+    		<Grid x:Name="Grid_Page2" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400" RenderTransformOrigin="0.5,0.5" Canvas.Top="585">
+    			<Grid.RenderTransform>
+    				<CompositeTransform/>
+    			</Grid.RenderTransform>
+    			<Grid.Background>
+    				<ImageBrush Stretch="Fill" ImageSource="Assets/history_page/back_sky.jpg"/>
+    			</Grid.Background>
+    			<Canvas HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400">
+                    <Canvas.Resources>
+                        <Storyboard x:Name="Move_Left">
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_Airplane"
+                                                           Storyboard.TargetProperty="(Canvas.Left)"
+                                                           FillBehavior="Stop"
+                                                           RepeatBehavior="forever">
+                                <LinearDoubleKeyFrame KeyTime="0:0:10" Value="440"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:10.5" Value="440"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:20.5" Value="-260"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:21" Value="-260"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:31" Value="440"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:31.5" Value="440"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:41.5" Value="-260"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:42" Value="-260"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:52" Value="440"/>
+
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_Airplane"
+                                                           Storyboard.TargetProperty="(Canvas.Top)"
+                                                           FillBehavior="Stop"
+                                                           RepeatBehavior="forever">
+                                <LinearDoubleKeyFrame KeyTime="0:0:10" Value="19"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:10.5" Value="100"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:20.5" Value="100"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:21" Value="200"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:31" Value="200"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:31.5" Value="300"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:41.5" Value="300"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:42" Value="400"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:52" Value="400"/>
+
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Scale"
+                                                           Storyboard.TargetProperty="ScaleX"
+                                                           FillBehavior="Stop"
+                                                           RepeatBehavior="forever">
+                                <LinearDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:10.5" Value="-1"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:20.5" Value="-1"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:21" Value="1"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:31" Value="1"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:31.5" Value="-1"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:41.5" Value="-1"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:42" Value="1"/>
+                                <LinearDoubleKeyFrame KeyTime="0:0:52" Value="1"/>
+
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </Canvas.Resources>
+                    <Image x:Name="Img_Airplane" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="248" RenderTransformOrigin="0.5,0.5" Canvas.Left="-260" Canvas.Top="19" Source="Assets/history_page/airplane.png" Stretch="None">
+                    	<Image.RenderTransform>
+                            <ScaleTransform x:Name="Scale"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </Canvas>
+    			<Image x:Name="Img_Tree1" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400" IsHitTestVisible="False" Source="Assets/history_page/tree_4.png"/>
+    			<Image x:Name="Img_Berry16" HorizontalAlignment="Left" Height="36" Margin="309,492,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry17" HorizontalAlignment="Left" Height="36" Margin="249,438,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry18" HorizontalAlignment="Left" Height="36" Margin="89,411,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry19" HorizontalAlignment="Left" Height="36" Margin="314,364,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry20" HorizontalAlignment="Left" Height="36" Margin="71,337,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry21" HorizontalAlignment="Left" Height="36" Margin="247,359,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry22" HorizontalAlignment="Left" Height="36" Margin="271,291,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry23" HorizontalAlignment="Left" Height="36" Margin="102,277,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry24" HorizontalAlignment="Left" Height="36" Margin="264,203,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry25" HorizontalAlignment="Left" Height="36" Margin="70,177,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry26" HorizontalAlignment="Left" Height="36" Margin="138,125,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry27" HorizontalAlignment="Left" Height="36" Margin="248,103,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry28" HorizontalAlignment="Left" Height="36" Margin="321,103,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry29" HorizontalAlignment="Left" Height="36" Margin="83,63,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry30" HorizontalAlignment="Left" Height="36" Margin="220,36,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Grid x:Name="Grid_Detail16" HorizontalAlignment="Left" Height="42" Margin="292,528,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name4" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time4" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date4" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail17" HorizontalAlignment="Left" Height="42" Margin="232,475,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name16" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time16" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date16" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail18" HorizontalAlignment="Left" Height="42" Margin="71,449,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name17" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time17" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date17" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail19" HorizontalAlignment="Left" Height="42" Margin="297,402,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name18" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time18" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date18" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail20" HorizontalAlignment="Left" Height="42" Margin="53,373,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name19" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time19" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date19" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail21" HorizontalAlignment="Left" Height="42" Margin="228,396,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name20" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time20" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date20" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail22" HorizontalAlignment="Left" Height="42" Margin="253,328,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name21" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time21" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date21" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail23" HorizontalAlignment="Left" Height="42" Margin="83,314,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name22" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time22" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date22" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail24" HorizontalAlignment="Left" Height="42" Margin="247,240,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name23" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time23" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date23" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail25" HorizontalAlignment="Left" Height="42" Margin="53,214,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name24" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time24" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date24" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail26" HorizontalAlignment="Left" Height="42" Margin="121,162,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name25" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time25" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date25" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail27" HorizontalAlignment="Left" Height="42" Margin="304,142,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name26" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time26" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date26" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail28" HorizontalAlignment="Left" Height="42" Margin="231,141,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name27" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time27" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date27" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail29" HorizontalAlignment="Left" Height="42" Margin="66,100,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name28" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time28" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date28" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail30" HorizontalAlignment="Left" Height="42" Margin="203,72,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name29" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time29" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date29" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    		</Grid>
+    		<Grid x:Name="Grid_Page3" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400" RenderTransformOrigin="0.5,0.5" Canvas.Top="580">
+    			<Grid.RenderTransform>
+    				<CompositeTransform/>
+    			</Grid.RenderTransform>
+    			<Grid.Background>
+    				<ImageBrush Stretch="Fill" ImageSource="Assets/history_page/back_space.jpg"/>
+    			</Grid.Background>
+    			<Canvas HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400">
+    				<Image x:Name="Img_Prince" HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="90" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Left="277" Canvas.Top="33" Source="Assets/history_page/littleprince.png">
+    					<Image.RenderTransform>
+    						<CompositeTransform/>
+    					</Image.RenderTransform>
+    				</Image>
+    			</Canvas>
+    			<Image x:Name="Img_Tree2" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="400" IsHitTestVisible="False" Source="Assets/history_page/tree_2.png"/>
+    			<Image x:Name="Img_Berry31" HorizontalAlignment="Left" Height="36" Margin="309,492,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry32" HorizontalAlignment="Left" Height="36" Margin="249,438,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry33" HorizontalAlignment="Left" Height="36" Margin="89,411,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry34" HorizontalAlignment="Left" Height="36" Margin="314,364,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry35" HorizontalAlignment="Left" Height="36" Margin="71,337,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry36" HorizontalAlignment="Left" Height="36" Margin="247,359,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry37" HorizontalAlignment="Left" Height="36" Margin="271,291,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry38" HorizontalAlignment="Left" Height="36" Margin="102,277,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry39" HorizontalAlignment="Left" Height="36" Margin="264,203,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Image x:Name="Img_Berry40" HorizontalAlignment="Left" Height="36" Margin="70,177,0,0" VerticalAlignment="Top" Width="36" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    			<Grid x:Name="Grid_Detail31" HorizontalAlignment="Left" Height="42" Margin="292,528,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name30" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time30" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date30" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail32" HorizontalAlignment="Left" Height="42" Margin="232,475,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name31" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time31" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date31" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail33" HorizontalAlignment="Left" Height="42" Margin="71,449,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name32" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time32" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date32" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail34" HorizontalAlignment="Left" Height="42" Margin="297,402,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name33" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time33" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date33" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail35" HorizontalAlignment="Left" Height="42" Margin="53,373,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name34" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time34" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date34" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail36" HorizontalAlignment="Left" Height="42" Margin="228,396,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name35" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time35" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date35" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail37" HorizontalAlignment="Left" Height="42" Margin="253,328,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name36" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time36" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date36" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail38" HorizontalAlignment="Left" Height="42" Margin="83,314,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name37" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time37" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date37" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail39" HorizontalAlignment="Left" Height="42" Margin="247,240,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name38" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time38" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date38" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    			<Grid x:Name="Grid_Detail40" HorizontalAlignment="Left" Height="42" Margin="53,214,0,0" VerticalAlignment="Top" Width="70">
+    				<TextBlock x:Name="Detail1_Name39" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" Text="Jenny" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="12" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Margin="0,1,0,0" Foreground="#FFED925D"/>
+    				<TextBlock x:Name="Detail1_Time39" HorizontalAlignment="Left" Height="11" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="70" Margin="0,19,0,0" TextAlignment="Center" FontSize="10.667" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black"/>
+    				<TextBlock x:Name="Detail1_Date39" HorizontalAlignment="Left" Height="10" TextWrapping="Wrap" Text="03.05.2015" VerticalAlignment="Top" Width="70" Margin="0,30,0,0" TextAlignment="Center" FontSize="8" Padding="0" FontFamily="Arial Black" FontWeight="Bold" Foreground="Gray"/>
+    			</Grid>
+    		</Grid>
+    	</Canvas>
+    	<Image x:Name="Img_Berry" HorizontalAlignment="Left" Height="32" Margin="17,13,0,0" VerticalAlignment="Top" Width="32" Source="Assets/berry/berry.png" Stretch="Fill"/>
+    	<TextBlock x:Name="Img_Count" HorizontalAlignment="Left" Height="39" Margin="48,10,0,0" TextWrapping="Wrap" Text="45" VerticalAlignment="Top" Width="47" FontFamily="Myanmar Text" FontSize="32" FontWeight="Bold" LineHeight="8" TextAlignment="Center"/>
+    	<Image x:ConnectionId='1' x:Name="Img_Up" HorizontalAlignment="Left" Height="27" Margin="192,9,0,0" VerticalAlignment="Top" Width="22" Source="Assets/history_page/arrow.png"                                        Stretch="None" Opacity="0.5"/>
+    	<Image x:ConnectionId='2' x:Name="Img_Dwon" HorizontalAlignment="Left" Height="27" Margin="189,548,0,0" VerticalAlignment="Top" Width="22" Source="Assets/history_page/arrow.png" Stretch="None"                                           RenderTransformOrigin="0.5,0.5" Opacity="0.5">
+    		<Image.RenderTransform>
+    			<CompositeTransform Rotation="180"/>
+    		</Image.RenderTransform>
+    	</Image>
+
+    </Grid>
+</Page>
+

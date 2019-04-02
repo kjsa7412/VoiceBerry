@@ -1,0 +1,86 @@
+﻿<Page
+    x:Class="voice.MyPage2_Sub1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Page.BottomAppBar>
+		<CommandBar BorderBrush="#59000000" Background="#591F1F1F">
+			<AppBarButton Icon="Accept" Label="appbarbutton"/>
+			<AppBarButton Icon="ClearSelection" Label="appbarbutton"/>
+			<AppBarButton Icon="Add" Label="appbarbutton"/>
+			<AppBarButton Icon="Edit" Label="appbarbutton"/>
+		</CommandBar>
+	</Page.BottomAppBar>
+
+    <Grid>
+    	<GridView x:Name="GView_MyPage2_Sub1" HorizontalAlignment="Left" Height="460" VerticalAlignment="Top" Width="400" Background="White">
+    		<GridView.Resources>
+    			<DataTemplate x:Key="DataTemplate1">
+    				<StackPanel Height="100" Width="400" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+    					<StackPanel.Background>
+    						<ImageBrush Stretch="Fill" ImageSource="Assets/my_fileline/my_fileline.jpg"/>
+    					</StackPanel.Background>
+    					<Grid Width="400">
+    						<Grid.Background>
+    							<ImageBrush Stretch="Fill" ImageSource="{Binding Image2}"/>
+    						</Grid.Background>
+    						<TextBlock Text="{Binding Content}" FontSize="16" FontFamily="Trebuchet MS" TextWrapping="Wrap" Foreground="Black" Margin="25,5,24,32" Width="351" Height="60"/>
+    						<TextBlock Text="{Binding Option}" FontSize="13.333" FontFamily="Trebuchet MS" TextWrapping="Wrap" Margin="234,78,98,-7" Foreground="Black" TextAlignment="Center"/>
+    						<TextBlock Text="{Binding Option2}" FontSize="13.333" FontFamily="Trebuchet MS" TextWrapping="Wrap" Margin="287,78,45,-7" Foreground="Black" TextAlignment="Center"/>
+    						<TextBlock Text="{Binding Option3}" FontSize="13.333" FontFamily="Trebuchet MS" TextWrapping="Wrap" Margin="338,78,-6,-7" Foreground="Black" TextAlignment="Center"/>
+    					</Grid>
+    				</StackPanel>
+    			</DataTemplate>
+    			<DataTemplate x:Key="DataTemplate2">
+    				<StackPanel Height="200" Width="400" HorizontalAlignment="Left" VerticalAlignment="Top">
+    					<StackPanel Margin="0" Height="100" Orientation="Horizontal">
+    						<StackPanel.Background>
+    							<ImageBrush Stretch="Fill" ImageSource="Assets/my_fileline/my_fileline.jpg"/>
+    						</StackPanel.Background>
+    						<StackPanel Margin="0" Width="100">
+    							<Image Height="98" Margin="0" Width="100" Source="Assets/filelist/filelists.jpg" Stretch="None"/>
+    						</StackPanel>
+    						<StackPanel Width="300" Margin="0,0,0,20">
+    							<TextBlock FontSize="16" FontFamily="Trebuchet MS" TextWrapping="Wrap" Height="23" Margin="10,32,10,0" Text="Daily Life" Foreground="Black"/>
+    							<TextBlock FontSize="12" FontFamily="Trebuchet MS" TextWrapping="Wrap" Height="27" Margin="10,0" Foreground="Black" Text="12"/>
+    						</StackPanel>
+    					</StackPanel>
+    					<StackPanel Margin="0" Height="100" Orientation="Horizontal">
+    						<StackPanel.Background>
+    							<ImageBrush Stretch="Fill" ImageSource="Assets/my_fileline/my_fileline.jpg"/>
+    						</StackPanel.Background>
+    						<StackPanel Margin="0" Width="100">
+    							<Image Height="98" Margin="0" Width="100" Source="Assets/filelist/filelist.jpg" Stretch="None"/>
+    						</StackPanel>
+    						<StackPanel Width="300" Margin="0,0,0,20">
+    							<TextBlock FontSize="16" FontFamily="Trebuchet MS" TextWrapping="Wrap" Height="23" Margin="10,32,10,0" Text="Dining" Foreground="Black"/>
+    							<TextBlock FontSize="12" FontFamily="Trebuchet MS" TextWrapping="Wrap" Height="27" Margin="10,0" Foreground="Black" Text="8"/>
+    						</StackPanel>
+    					</StackPanel>
+    				</StackPanel>
+    			</DataTemplate>
+    			<Style x:Key="GridViewItemStyle1" TargetType="GridViewItem"/>
+    			<ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+    				<StackPanel Height="106"/>
+    			</ItemsPanelTemplate>
+    		</GridView.Resources>
+    		<GridView.ItemContainerStyle>
+    			<StaticResource ResourceKey="GridViewItemStyle1"/>
+    		</GridView.ItemContainerStyle>
+    		<GridView.FooterTemplate>
+    			<StaticResource ResourceKey="DataTemplate1"/>
+    		</GridView.FooterTemplate>
+    		<GridView.HeaderTemplate>
+    			<StaticResource ResourceKey="DataTemplate2"/>
+    		</GridView.HeaderTemplate>
+    		<GridView.ItemTemplate>
+    			<StaticResource ResourceKey="DataTemplate1"/>
+    		</GridView.ItemTemplate>
+    	</GridView>
+
+    </Grid>
+</Page>

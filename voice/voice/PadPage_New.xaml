@@ -1,0 +1,219 @@
+﻿<Page
+    x:Class="voice.PadPage_New"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Icon="SlideShow" Label="appbarbutton" Click="AppBarButton_Click"/>
+            <AppBarButton Icon="Document" Label="appbarbutton" Click="AppBarButton_Click_1"/>
+            <AppBarButton Icon="Download" Label="appbarbutton"/>
+            <AppBarButton Icon="AlignLeft" Label="appbarbutton" Click="AppBarButton_Click_2"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Margin="0,0.333,0,-0.333" Height="520" VerticalAlignment="Top">
+        <Grid.Resources>
+        </Grid.Resources>
+    	<Grid.Background>
+    		<ImageBrush ImageSource="Assets/top_icon_37x37/pad_back.jpg"/>
+    	</Grid.Background>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="130"/>
+    		<RowDefinition Height="130"/>
+    		<RowDefinition Height="130"/>
+    		<RowDefinition Height="130"/>
+    		<RowDefinition Height="9.583"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="133.333"/>
+    		<ColumnDefinition Width="133.333"/>
+    		<ColumnDefinition Width="133.333"/>
+    	</Grid.ColumnDefinitions>
+		<Canvas>
+			<Image x:Name="Img_back1" Margin="0" Source="Assets/pad/pad_black.png" PointerReleased="Image_PointerReleased" Stretch="None" Height="130" Width="133" Visibility="Collapsed"/>
+    		<Image x:Name="Img_back2" Margin="0" Source="Assets/pad/pad_black.png" PointerReleased="Image_PointerReleased_1" Stretch="None" Height="130" Canvas.Left="133" Width="133" Visibility="Collapsed"/>
+    		<Image x:Name="Img_back3" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Left="267" Width="133" Visibility="Collapsed" PointerReleased="Img_back3_PointerReleased"/>
+    		<Image x:Name="Img_back4" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Top="130" Width="133" Visibility="Collapsed" PointerReleased="Img_back4_PointerReleased"/>
+    		<Image x:Name="Img_back5" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Left="133" Canvas.Top="130" Width="133" Visibility="Collapsed" PointerReleased="Img_back5_PointerReleased"/>
+    		<Image x:Name="Img_back6" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Left="267" Canvas.Top="130" Width="133" Visibility="Collapsed" PointerReleased="Img_back6_PointerReleased"/>
+    		<Image x:Name="Img_back7" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Top="260" Width="133" Visibility="Collapsed" PointerReleased="Img_back7_PointerReleased"/>
+    		<Image x:Name="Img_back8" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Left="133" Canvas.Top="260" Width="133" Visibility="Collapsed"/>
+    		<Image x:Name="Img_back9" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Left="267" Canvas.Top="260" Width="133" Visibility="Collapsed"/>
+    		<Image x:Name="Img_back10" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Top="390" Width="133" Visibility="Collapsed"/>
+    		<Image x:Name="Img_back11" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Left="133" Canvas.Top="390" Width="133" Visibility="Collapsed"/>
+    		<Image x:Name="Img_back12" Margin="0" Source="Assets/pad/pad_black.png" Stretch="None" Height="130" Canvas.Left="267" Canvas.Top="390" Width="133" Visibility="Collapsed"/>
+    		<Rectangle x:Name="Num1_Bar1" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+                <Rectangle.RenderTransform>
+                    <ScaleTransform x:Name="Scale"/>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+    		<Rectangle x:Name="Num1_Bar2" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Left="133.333" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale1"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar3" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Left="266" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale2"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar4" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="130" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale3"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar5" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="130" Canvas.Left="133" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale4"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar6" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="130" Canvas.Left="266" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale5"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar7" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="260" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale6"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar8" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="260" Canvas.Left="133" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale7"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar9" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="260" Canvas.Left="266" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale8"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar10" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="390" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale9"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar11" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="390" Canvas.Left="133" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale10"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<Rectangle x:Name="Num1_Bar12" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Margin="0" Width="5" RenderTransformOrigin="0,0.5" Canvas.Top="390" Canvas.Left="266" Visibility="Collapsed">
+    			<Rectangle.Fill>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    			</Rectangle.Fill>
+    			<Rectangle.RenderTransform>
+    				<ScaleTransform x:Name="Scale11"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<TextBox x:Name = "TBox_Time1" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Top="95" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time2" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Left="133" Canvas.Top="95" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time3" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Left="267" Canvas.Top="95" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time4" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Top="225" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time5" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Left="133" Canvas.Top="225" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time6" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Left="267" Canvas.Top="225" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time7" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Top="355" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time8" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Left="133" Canvas.Top="355" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time9" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Left="266" Canvas.Top="355" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time10" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Top="485" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time11" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Left="133" Canvas.Top="485" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Time12" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="White" Opacity="0.7" FontWeight="Bold" Canvas.Left="266" Canvas.Top="485" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice1" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" Text="Intro" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Margin="0" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Top="-1" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice2" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" Text="Introduction" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Left="133" Margin="0" Canvas.Top="-1" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice3" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" Text="Question1" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Left="267" Margin="0" Canvas.Top="-1" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice4" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" Text="Subject" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Margin="0" Canvas.Top="129" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice5" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" Text="Conclusion" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Left="133" Canvas.Top="129" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice6" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Left="267" Canvas.Top="129" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice7" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Margin="0" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Top="249" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice8" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Left="133" Canvas.Top="259" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice9" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Left="266" Canvas.Top="259" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice10" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Margin="0" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Top="379" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice11" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Left="133" Canvas.Top="389" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Voice12" HorizontalAlignment="Left" Height="95" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="19.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,20,2.5,2.5" FontWeight="Bold" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,30,8,0" Foreground="White" Opacity="0.7" Canvas.Left="266" Canvas.Top="389" Margin="0" Visibility="Collapsed"/>
+    		<Image x:Name = "Img_Object1" Source="Assets/pad/pad_object.png" PointerReleased="Image_PointerReleased" Stretch="None" Height="130" Width="133" Visibility="Collapsed"/>
+    		<Image x:Name = "Img_Object2" Source="Assets/pad/pad_object.png" PointerReleased="Image_PointerReleased_1" Stretch="None" Height="130" Canvas.Left="134" Width="133" Visibility="Collapsed"/>
+    		<Image x:Name = "Img_Object3" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Left="267" Width="133" Visibility="Collapsed" PointerReleased="Img_Object3_PointerReleased"/>
+    		<Image x:Name = "Img_Object4" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Top="130" Width="133" Visibility="Collapsed" PointerReleased="Img_Object4_PointerReleased"/>
+    		<Image x:Name = "Img_Object5" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Left="134" Canvas.Top="130" Width="133" Visibility="Collapsed" PointerReleased="Img_Object5_PointerReleased"/>
+    		<Image x:Name = "Img_Object6" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Left="267" Canvas.Top="130" Width="133" Visibility="Collapsed" PointerReleased="Img_Object6_PointerReleased"/>
+    		<Image x:Name = "Img_Object7" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Top="260" Width="133" Visibility="Collapsed" PointerReleased="Img_Object7_PointerReleased"/>
+    		<Image x:Name = "Img_Object8" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Left="134" Canvas.Top="260" Width="133" Visibility="Collapsed" PointerReleased="Img_Object8_PointerReleased"/>
+    		<Image x:Name = "Img_Object9" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Left="267" Canvas.Top="260" Width="133" Visibility="Collapsed" PointerReleased="Img_Object9_PointerReleased"/>
+    		<Image x:Name = "Img_Object10" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Top="390" Width="133" Visibility="Collapsed" PointerReleased="Img_Object10_PointerReleased"/>
+    		<Image x:Name = "Img_Object11" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Left="134" Canvas.Top="390" Width="133" Visibility="Collapsed" PointerReleased="Img_Object11_PointerReleased"/>
+    		<Image x:Name = "Img_Object12" Source="Assets/pad/pad_object.png" Stretch="None" Height="130" Canvas.Left="267" Canvas.Top="390" Width="133" Visibility="Collapsed" PointerReleased="Img_Object12_PointerReleased"/>
+    		<TextBox x:Name = "TBox_Num1" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="-12" Canvas.Top="7" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num2" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="122" Canvas.Top="7" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num3" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="255" Canvas.Top="7" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num4" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="-11" Canvas.Top="137" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num5" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="122" Canvas.Top="137" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num6" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="255" Canvas.Top="137" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num7" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="-12" Canvas.Top="267" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num8" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="122" Canvas.Top="267" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num9" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="255" Canvas.Top="267" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num10" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="-12" Canvas.Top="397" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num11" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="122" Canvas.Top="397" Margin="0" Visibility="Collapsed"/>
+    		<TextBox x:Name = "TBox_Num12" HorizontalAlignment="Left" Height="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" FontSize="13.333" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" Padding="7,-3,8,0" Foreground="#FFA9A1A1" FontWeight="Bold" Canvas.Left="255" Canvas.Top="397" Margin="0" Visibility="Collapsed"/>
+    		<Grid x:Name="Grid_Menu1" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Width="400" Canvas.Left="402" Canvas.Top="390" RenderTransformOrigin="0.5,0.5" Opacity="0.995">
+    			<Grid.Background>
+    				<ImageBrush Stretch="None" ImageSource="Assets/pad/playbar_back.png"/>
+    			</Grid.Background>
+    			<Grid.RenderTransform>
+    				<ScaleTransform x:Name="Rmove"/>
+    			</Grid.RenderTransform>
+    			<Rectangle x:Name="Num1_Bar_Copy11" HorizontalAlignment="Left" Height="5" VerticalAlignment="Top" Margin="3,98,0,0" Width="8" RenderTransformOrigin="0,0.5">
+    				<Rectangle.Fill>
+    					<ImageBrush Stretch="None" ImageSource="Assets/pad/pad_color.png"/>
+    				</Rectangle.Fill>
+    				<Rectangle.RenderTransform>
+    					<ScaleTransform x:Name="Scale12"/>
+    				</Rectangle.RenderTransform>
+    			</Rectangle>
+    			<TextBox HorizontalAlignment="Center" Height="50" Margin="115,24,115,56" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Center" Width="170" FontSize="32" FontFamily="Trebuchet MS" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,5,2.5,2.5" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" FontWeight="Bold"/>
+    			<TextBox HorizontalAlignment="Left" Height="22" Margin="-2,72,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="105" FontSize="17.333" FontFamily="Trebuchet MS" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,5,2.5,2.5" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" FontWeight="Bold" Foreground="White"/>
+    			<TextBox HorizontalAlignment="Left" Height="22" Margin="263,72,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="133" FontSize="17.333" FontFamily="Trebuchet MS" TextAlignment="Right" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="2.5,5,2.5,2.5" IsReadOnly="True" IsHitTestVisible="False" IsTabStop="False" IsTextPredictionEnabled="False" FontWeight="Bold" Foreground="White"/>
+    		</Grid>
+    		<Grid x:Name="Grid_Menu2" HorizontalAlignment="Left" Height="390" VerticalAlignment="Top" Width="400" Canvas.Left="402" Background="White">
+    			<Image Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="400" Stretch="None" Source="Assets/pad/scriptbar.png"/>
+    			<Frame x:Name="Frame_PadPage" Content="Frame" HorizontalAlignment="Center" Height="351" Margin="0,39,0,0" VerticalAlignment="Top" Width="271" Background="White"/>
+    		</Grid>
+    	</Canvas>
+    </Grid>
+</Page>

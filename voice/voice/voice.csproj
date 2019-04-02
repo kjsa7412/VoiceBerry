@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75C8B070-B202-48A2-959B-CACF19E80DEB}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>voice</RootNamespace>
+    <AssemblyName>voice</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="app.config" />
+    <None Include="Assets\history_page\history_page.psd" />
+    <Content Include="Assets\donator_optionbox_format\donator_optionbox_format.png" />
+    <Content Include="Assets\donator_optionbox_format\gener_female_icon.png" />
+    <Content Include="Assets\donator_optionbox_format\gener_male_icon.png" />
+    <Content Include="Assets\donator_optionbox_format\recording_wave.png" />
+    <Content Include="Assets\filelist\file_line_w.png" />
+    <Content Include="Assets\Intro_Login\idbox.png" />
+    <Content Include="Assets\Intro_Login\intro1.jpg" />
+    <Content Include="Assets\Intro_Login\login1.jpg" />
+    <Content Include="Assets\Intro_Login\login_back.png" />
+    <Content Include="Assets\Intro_Login\pwbox.png" />
+    <Content Include="Assets\Intro_Login\signinBox.png" />
+    <Content Include="Assets\maidonator_main\main_female_icon.png" />
+    <Content Include="Assets\maidonator_main\main_male_icon.png" />
+    <Content Include="Assets\maidonator_main\peedbox.png" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-Bold.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-BoldCond.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-BoldCondIt.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-BoldIt.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-Cond.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-CondIt.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-It.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-Regular.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-Semibold.otf" />
+    <Content Include="Assets\Myriad Pro\MyriadPro-SemiboldIt.otf" />
+    <None Include="Design\projectGuides.guides" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityPage.xaml.cs">
+      <DependentUpon>ActivityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AskingListPage.xaml.cs">
+      <DependentUpon>AskingListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AskingListPage_List.cs" />
+    <Compile Include="btn5.xaml.cs">
+      <DependentUpon>btn5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="FollowList.cs" />
+    <Compile Include="Intro.xaml.cs">
+      <DependentUpon>Intro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalDatabase.cs" />
+    <Compile Include="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainList.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage2.xaml.cs">
+      <DependentUpon>MainPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage3.xaml.cs">
+      <DependentUpon>MainPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyPage.xaml.cs">
+      <DependentUpon>MyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyPage2.xaml.cs">
+      <DependentUpon>MyPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyPage2List.cs" />
+    <Compile Include="MyPage2List2.cs" />
+    <Compile Include="MyPage2_Sub1.xaml.cs">
+      <DependentUpon>MyPage2_Sub1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyPage_Another_SubPage1.xaml.cs">
+      <DependentUpon>MyPage_Another_SubPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyPage_Another_SubPage1_List.cs" />
+    <Compile Include="MyPage_Sub1.xaml.cs">
+      <DependentUpon>MyPage_Sub1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NoticePage_Another.xaml.cs">
+      <DependentUpon>NoticePage_Another.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NoticePage_Another_List.cs" />
+    <Compile Include="optionPage.xaml.cs">
+      <DependentUpon>optionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaddPageList.cs" />
+    <Compile Include="PadPage.xaml.cs">
+      <DependentUpon>PadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PadPage_Desc.xaml.cs">
+      <DependentUpon>PadPage_Desc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PadPage_New.xaml.cs">
+      <DependentUpon>PadPage_New.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PadPage_Sub1.xaml.cs">
+      <DependentUpon>PadPage_Sub1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PadPage_Sub2.xaml.cs">
+      <DependentUpon>PadPage_Sub2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadPage.xaml.cs">
+      <DependentUpon>ReadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RecodePage.xaml.cs">
+      <DependentUpon>RecodePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RecodePage_Sub1_List.cs" />
+    <Compile Include="RecodePage_Sub1.xaml.cs">
+      <DependentUpon>RecodePage_Sub1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RecodePage_Sub2.xaml.cs">
+      <DependentUpon>RecodePage_Sub2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpeechPage.xaml.cs">
+      <DependentUpon>SpeechPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpeechPage_List.cs" />
+    <Compile Include="SpeechPage_Sub1.xaml.cs">
+      <DependentUpon>SpeechPage_Sub1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpeechPage_Sub1_List.cs" />
+    <Compile Include="TodoItem.cs" />
+    <Compile Include="VoiceListPage.xaml.cs">
+      <DependentUpon>VoiceListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VoiceListPage_List.cs" />
+    <Compile Include="writePage.xaml.cs">
+      <DependentUpon>writePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WritePage_Pre.xaml.cs">
+      <DependentUpon>WritePage_Pre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WritePage_Pre_List.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\0%25.jpg" />
+    <Content Include="Assets\activity_test.jpg" />
+    <Content Include="Assets\asking_donatelist\asking_line.png" />
+    <Content Include="Assets\asking_donatelist\berry_play.png" />
+    <Content Include="Assets\asking_donatelist\berry_stop.png" />
+    <Content Include="Assets\asking_donatelist\donator_profile.png" />
+    <Content Include="Assets\asking_donatelist\icon_askingdocu.png" />
+    <Content Include="Assets\background_jpgfile\back_Gray_40059.jpg" />
+    <Content Include="Assets\background_jpgfile\back_white_400521.jpg" />
+    <Content Include="Assets\berry\berry.png" />
+    <Content Include="Assets\black.jpg" />
+    <Content Include="Assets\blue.jpg" />
+    <Content Include="Assets\brown.jpg" />
+    <Content Include="Assets\filelist\filelist.jpg" />
+    <Content Include="Assets\filelist\filelist.png" />
+    <Content Include="Assets\filelist\filelists.jpg" />
+    <Content Include="Assets\filelist\filelists.png" />
+    <Content Include="Assets\filelist\file_green.png" />
+    <Content Include="Assets\filelist\file_line_400x39.png" />
+    <Content Include="Assets\filelist\file_more.png" />
+    <Content Include="Assets\filelist\file_plus.png" />
+    <Content Include="Assets\filelist\file_white.png" />
+    <Content Include="Assets\filelist\voice_box_green.png" />
+    <Content Include="Assets\follow.jpg" />
+    <Content Include="Assets\gray.jpg" />
+    <Content Include="Assets\history_page\airplane.png" />
+    <Content Include="Assets\history_page\arrow.png" />
+    <Content Include="Assets\history_page\back_home.jpg" />
+    <Content Include="Assets\history_page\back_sky.jpg" />
+    <Content Include="Assets\history_page\back_space.jpg" />
+    <Content Include="Assets\history_page\history_home.jpg" />
+    <Content Include="Assets\history_page\history_sky.jpg" />
+    <Content Include="Assets\history_page\history_space.jpg" />
+    <Content Include="Assets\history_page\info_1.jpg" />
+    <Content Include="Assets\history_page\info_2.jpg" />
+    <Content Include="Assets\history_page\littleprince.png" />
+    <Content Include="Assets\history_page\tree_1.png" />
+    <Content Include="Assets\history_page\tree_1_next.png" />
+    <Content Include="Assets\history_page\tree_2.png" />
+    <Content Include="Assets\history_page\tree_3.png" />
+    <Content Include="Assets\history_page\tree_4.png" />
+    <Content Include="Assets\history_page\tree_grow.jpg" />
+    <Content Include="Assets\icon_middle\docu_click.png" />
+    <Content Include="Assets\icon_middle\file_click.png" />
+    <Content Include="Assets\icon_middle\ms_click.png" />
+    <Content Include="Assets\login\login_login.jpg" />
+    <Content Include="Assets\login\login_signup.jpg" />
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\logo_1차_골라쓰세용\Logo_line_2_png.png" />
+    <Content Include="Assets\logo_1차_골라쓰세용\Logo_line_png.png" />
+    <Content Include="Assets\logo_1차_골라쓰세용\Logo_white_png.png" />
+    <Content Include="Assets\main_textbox\maintext_profile1.png" />
+    <Content Include="Assets\main_textbox\maintext_profile2.png" />
+    <Content Include="Assets\main_textbox\maintext_profile3.png" />
+    <Content Include="Assets\main_textbox\maintext_profile4.png" />
+    <Content Include="Assets\main_textbox\main_textbox.jpg" />
+    <Content Include="Assets\main_textbox\main_textbox_1.jpg" />
+    <Content Include="Assets\main_textbox\main_textbox_2.jpg" />
+    <Content Include="Assets\main_textbox\main_textbox_3.jpg" />
+    <Content Include="Assets\main_textbox\main_textbox_4.jpg" />
+    <Content Include="Assets\main_textbox\profile_grandma.png" />
+    <Content Include="Assets\main_textbox\profile_woman.png" />
+    <Content Include="Assets\menu_bottonline\memu_bottomline.jpg" />
+    <Content Include="Assets\menu_bottonline\memu_bottomline.png" />
+    <Content Include="Assets\Menu_icon\icon_main_green.jpg" />
+    <Content Include="Assets\Menu_icon\icon_main_half.jpg" />
+    <Content Include="Assets\Menu_icon\icon_main_line.jpg" />
+    <Content Include="Assets\Menu_icon\icon_my_green.jpg" />
+    <Content Include="Assets\Menu_icon\icon_my_half.jpg" />
+    <Content Include="Assets\Menu_icon\icon_my_line.jpg" />
+    <Content Include="Assets\Menu_icon\icon_notice_green.jpg" />
+    <Content Include="Assets\Menu_icon\icon_notice_half.jpg" />
+    <Content Include="Assets\Menu_icon\icon_notice_line.jpg" />
+    <Content Include="Assets\Menu_icon\icon_pad_green.jpg" />
+    <Content Include="Assets\Menu_icon\icon_pad_half.jpg" />
+    <Content Include="Assets\Menu_icon\icon_pad_line.jpg" />
+    <Content Include="Assets\mypage_logotypo\mypage_580400_result.jpg" />
+    <Content Include="Assets\mypage_logotypo\VoiceBerry_typo_w_123x14.png" />
+    <Content Include="Assets\my_fileline\my_fileline.jpg" />
+    <Content Include="Assets\my_listen2.png" />
+    <Content Include="Assets\my_listen\my_listen.png" />
+    <Content Include="Assets\my_listen\my_listen_fill.png" />
+    <Content Include="Assets\MY_middleicon\docu_off.png" />
+    <Content Include="Assets\MY_middleicon\docu_on.png" />
+    <Content Include="Assets\MY_middleicon\file_off.png" />
+    <Content Include="Assets\MY_middleicon\file_on.png" />
+    <Content Include="Assets\MY_middleicon\message_off.png" />
+    <Content Include="Assets\MY_middleicon\message_on.png" />
+    <Content Include="Assets\my_number\followers.png" />
+    <Content Include="Assets\my_number\following.png" />
+    <Content Include="Assets\my_number\request.png" />
+    <Content Include="Assets\My_sentence\my_sentence.jpg" />
+    <Content Include="Assets\My_sentence\my_sentence.png" />
+    <Content Include="Assets\My_sentence\my_sentence_2.png" />
+    <Content Include="Assets\my_tapmenu\my_menu_docu.jpg" />
+    <Content Include="Assets\my_tapmenu\my_menu_docu.png" />
+    <Content Include="Assets\my_tapmenu\my_menu_docu_fill.jpg" />
+    <Content Include="Assets\my_tapmenu\my_menu_docu_fill.png" />
+    <Content Include="Assets\my_tapmenu\my_menu_file.jpg" />
+    <Content Include="Assets\my_tapmenu\my_menu_file.png" />
+    <Content Include="Assets\my_tapmenu\my_menu_file_fill.jpg" />
+    <Content Include="Assets\my_tapmenu\my_menu_file_fill.png" />
+    <Content Include="Assets\my_tapmenu\my_menu_message.jpg" />
+    <Content Include="Assets\my_tapmenu\my_menu_message.png" />
+    <Content Include="Assets\my_tapmenu\my_menu_message_fill.jpg" />
+    <Content Include="Assets\my_tapmenu\my_menu_message_fill.png" />
+    <Content Include="Assets\my_tapmenu\my_tapmenu_layout.jpg" />
+    <Content Include="Assets\my_tapmenu_log\my_menu_log.png" />
+    <Content Include="Assets\my_tapmenu_log\my_menu_log_fill.png" />
+    <Content Include="Assets\new_back.png" />
+    <Content Include="Assets\new_logo.jpg" />
+    <Content Include="Assets\notice_box.png" />
+    <Content Include="Assets\orange.jpg" />
+    <Content Include="Assets\pad\padpage.jpg" />
+    <Content Include="Assets\pad\padpage_2.jpg" />
+    <Content Include="Assets\pad\padpage_play.jpg" />
+    <Content Include="Assets\pad\padpage_script.jpg" />
+    <Content Include="Assets\pad\pad_add.png" />
+    <Content Include="Assets\pad\pad_black.png" />
+    <Content Include="Assets\pad\pad_color.png" />
+    <Content Include="Assets\pad\pad_object.png" />
+    <Content Include="Assets\pad\playbar_back.png" />
+    <Content Include="Assets\pad\scriptbar.png" />
+    <Content Include="Assets\pad_back.jpg" />
+    <Content Include="Assets\pad_change.jpg" />
+    <Content Include="Assets\pad_change3.jpg" />
+    <Content Include="Assets\Pad_pad\pad_pad.jpg" />
+    <Content Include="Assets\Pad_pad\pad_pad_bigsize.jpg" />
+    <Content Include="Assets\Pad_pad\pad_pad_bigsize_press.jpg" />
+    <Content Include="Assets\Pad_pad\pad_pad_bigsize_pressed.jpg" />
+    <Content Include="Assets\pad_rowpad\pad_rowpad.jpg" />
+    <Content Include="Assets\pad_rowpad\pad_rowpad_empty.jpg" />
+    <Content Include="Assets\pad_test\pad_test.png" />
+    <Content Include="Assets\pad_test\pad_test2.png" />
+    <Content Include="Assets\page_logo.jpg" />
+    <Content Include="Assets\profile\profile_gil.png" />
+    <Content Include="Assets\profile\profile_jason.png" />
+    <Content Include="Assets\profile\profile_pic.png" />
+    <Content Include="Assets\profile\profile_sam.png" />
+    <Content Include="Assets\profile\speechbuble.png" />
+    <Content Include="Assets\radio.jpg" />
+    <Content Include="Assets\recordPage\1.png" />
+    <Content Include="Assets\recordPage\10.png" />
+    <Content Include="Assets\recordPage\11.png" />
+    <Content Include="Assets\recordPage\12.png" />
+    <Content Include="Assets\recordPage\13.png" />
+    <Content Include="Assets\recordPage\14.png" />
+    <Content Include="Assets\recordPage\15.png" />
+    <Content Include="Assets\recordPage\16.png" />
+    <Content Include="Assets\recordPage\17.png" />
+    <Content Include="Assets\recordPage\18.png" />
+    <Content Include="Assets\recordPage\19.png" />
+    <Content Include="Assets\recordPage\2.png" />
+    <Content Include="Assets\recordPage\20.png" />
+    <Content Include="Assets\recordPage\21.png" />
+    <Content Include="Assets\recordPage\22.png" />
+    <Content Include="Assets\recordPage\23.png" />
+    <Content Include="Assets\recordPage\24.png" />
+    <Content Include="Assets\recordPage\3.png" />
+    <Content Include="Assets\recordPage\4.png" />
+    <Content Include="Assets\recordPage\5.png" />
+    <Content Include="Assets\recordPage\6.png" />
+    <Content Include="Assets\recordPage\7.png" />
+    <Content Include="Assets\recordPage\8.png" />
+    <Content Include="Assets\recordPage\9.png" />
+    <Content Include="Assets\recordPage\donator_record.jpg" />
+    <Content Include="Assets\pad_rowpad\red.jpg" />
+    <Content Include="Assets\scriptbox\scriptbox_gray.png" />
+    <Content Include="Assets\scriptbox\scriptbox_one.png" />
+    <Content Include="Assets\script_boxformat.png" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\top_icon_37x37\able_history_gray.png" />
+    <Content Include="Assets\top_icon_37x37\able_history_green.png" />
+    <Content Include="Assets\top_icon_37x37\able_history_w.png" />
+    <Content Include="Assets\top_icon_37x37\able_main_gray.png" />
+    <Content Include="Assets\top_icon_37x37\able_main_green.png" />
+    <Content Include="Assets\top_icon_37x37\able_main_w.png" />
+    <Content Include="Assets\top_icon_37x37\dis_main_gray.png" />
+    <Content Include="Assets\top_icon_37x37\dis_main_green.png" />
+    <Content Include="Assets\top_icon_37x37\dis_main_w.png" />
+    <Content Include="Assets\top_icon_37x37\dis_my_gray.png" />
+    <Content Include="Assets\top_icon_37x37\dis_my_green.png" />
+    <Content Include="Assets\top_icon_37x37\dis_my_w.png" />
+    <Content Include="Assets\top_icon_37x37\dis_notice_gray.png" />
+    <Content Include="Assets\top_icon_37x37\dis_notice_green.png" />
+    <Content Include="Assets\top_icon_37x37\dis_notice_w.png" />
+    <Content Include="Assets\top_icon_37x37\dis_voicelist_gray.png" />
+    <Content Include="Assets\top_icon_37x37\dis_voicelist_green.png" />
+    <Content Include="Assets\top_icon_37x37\dis_voicelist_w.png" />
+    <Content Include="Assets\top_icon_37x37\pad_back.jpg" />
+    <Content Include="Assets\voicelispage.jpg" />
+    <Content Include="Assets\WideLogo.scale-240.png" />
+    <Content Include="Assets\writePage\circle_gray.png" />
+    <Content Include="Assets\writePage\circle_gray_5050.png" />
+    <Content Include="Assets\writePage\circle_green.png" />
+    <Content Include="Assets\writePage\circle_green_5050.png" />
+    <Content Include="Assets\writePage\circle_w.png" />
+    <Content Include="Assets\writePage\circle_w_5050.png" />
+    <Content Include="Assets\writePage\follow_line.png" />
+    <Content Include="Assets\writePage\icon_write.png" />
+    <Content Include="Assets\writePage\scriptbox_add.png" />
+    <Content Include="Assets\writePage\scriptbox_line.png" />
+    <Content Include="Assets\writePage\search.png" />
+    <Content Include="Assets\writePage\search_3030.png" />
+    <Content Include="Assets\writePage\writeoption_box.png" />
+    <Content Include="Assets\writePage\write_page.jpg" />
+    <Content Include="Assets\writePage\write_page_option.jpg" />
+    <Content Include="Assets\write_page_option2.jpg" />
+    <Content Include="Assets\yellow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="ActivityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AskingListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="btn5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Intro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MyPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyPage2_Sub1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyPage_Another_SubPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyPage_Sub1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NoticePage_Another.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="optionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PadPage_Desc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PadPage_New.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PadPage_Sub1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PadPage_Sub2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReadPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RecodePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RecodePage_Sub1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RecodePage_Sub2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SpeechPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SpeechPage_Sub1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VoiceListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="writePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WritePage_Pre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.Mobile">
+      <HintPath>..\..\VoiceBerry_2\VoiceBerry_\packages\WindowsAzure.MobileServices.1.3.1\lib\wpa81\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
+      <HintPath>..\..\VoiceBerry_2\VoiceBerry_\packages\WindowsAzure.MobileServices.1.3.1\lib\wpa81\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\VoiceBerry_2\VoiceBerry_\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\..\VoiceBerry_2\VoiceBerry_\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\VoiceBerry_2\VoiceBerry_\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="..\..\VoiceBerry_2\VoiceBerry_\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\VoiceBerry_2\VoiceBerry_\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\..\VoiceBerry_2\VoiceBerry_\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\..\VoiceBerry_2\VoiceBerry_\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

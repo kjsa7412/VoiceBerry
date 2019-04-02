@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="voice.MyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="Grid_MyPage">
+    	<Grid x:Name="Grid_MyPage_Root" HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="400">
+    		<StackPanel HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="400">
+    			<Grid x:Name="Grid_MyPage_Profile" Height="148">
+    				<Image x:Name="Image_Mypage_Profile" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Stretch="None" Source="Assets/profile/profile_pic.png" Margin="10,10,0,0"/>
+    				<Image x:Name="Img_SpeechBuble" HorizontalAlignment="Left" Height="65" Margin="128,65,0,0" VerticalAlignment="Top" Width="260" Source="Assets/profile/speechbuble.png" Stretch="None" Opacity="0.8"/>
+    				<TextBlock x:Name="TBox_TCount" HorizontalAlignment="Left" Height="20" Margin="129,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Arial" FontSize="10.667" Foreground="#FF727272" Text="REQEUSTES"/>
+    				<TextBlock x:Name="TBox_TFollower" HorizontalAlignment="Left" Height="20" Margin="216,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Arial" FontSize="10.667" Foreground="#FF727272" Text="FOLLOWERS"/>
+    				<TextBlock x:Name="TBox_TFollowing" HorizontalAlignment="Left" Height="20" Margin="305,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Arial" FontSize="10.667" Foreground="#FF727272" Text="FOLLOWING"/>
+    				<TextBlock x:Name="TBox_Count" HorizontalAlignment="Left" Height="20" Margin="128,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Arial" FontSize="10.667" Foreground="#FF727272" Text="13"/>
+    				<TextBlock x:Name="TBox_Follower" HorizontalAlignment="Left" Height="20" Margin="216,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Arial" FontSize="10.667" Foreground="#FF727272" Text="20"/>
+    				<TextBlock x:Name="TBox_Following" HorizontalAlignment="Left" Height="20" Margin="305,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Arial" FontSize="10.667" Foreground="#FF727272" Text="4"/>
+    				<TextBlock x:Name="TBox_Option" HorizontalAlignment="Left" Height="25" Margin="10,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="12" Foreground="#FF545454" FontFamily="Arial" Text="EUGENE" TextAlignment="Center" FontWeight="Bold" Padding="0,7,0,0"/>
+    				<TextBlock x:Name="TBox_Content" HorizontalAlignment="Left" Height="51" Margin="140,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" FontSize="13.333" Foreground="Black" FontFamily="Trebuchet MS" Text="Looking for an attractive voice!! :)" Padding="10,2,10,0"/>
+    				<TextBlock HorizontalAlignment="Left" Height="26" Margin="348,104,0,0" TextWrapping="Wrap" Text="EDIT" VerticalAlignment="Top" Width="30" Foreground="#FF499200" TextAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="8" Padding="0,7,0,0"/>
+    			</Grid>
+    			<Grid x:Name="Grid_MyPage_Menu" Height="60">
+    				<Grid.ColumnDefinitions>
+    					<ColumnDefinition/>
+    				</Grid.ColumnDefinitions>
+    				<Image x:ConnectionId='1' x:Name="Image_Mypage_btn1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="200"                                                                                                                                                       Source="Assets/MY_middleicon/docu_on.png" Stretch="None"/>
+    				<Image x:ConnectionId='2' x:Name="Image_Mypage_btn2" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="200"                                                                                                                                                       Source="Assets/MY_middleicon/message_off.png" Stretch="None" Margin="200,0,0,0"/>
+    			</Grid>
+    			<Frame x:Name="Frame_MyPage" Height="372">
+    				<Frame.Background>
+    					<ImageBrush Stretch="Fill" ImageSource="Assets/background_jpgfile/back_white_400521.jpg"/>
+    				</Frame.Background>
+    			</Frame>
+    		</StackPanel>
+    	</Grid>
+    </Grid>
+</Page>
+

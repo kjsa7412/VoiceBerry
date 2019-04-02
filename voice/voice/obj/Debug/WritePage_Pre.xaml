@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="voice.WritePage_Pre"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Page.BottomAppBar>
+		<CommandBar>
+			<AppBarButton x:ConnectionId='1' Icon="Forward" Label="appbarbutton"                           />
+		</CommandBar>
+	</Page.BottomAppBar>
+
+    <Grid>
+    	<Grid x:Name="Grid_WritePage_pre" Margin="0,0,0,464">
+    		<Image HorizontalAlignment="Left" Height="28" Margin="28,22,0,0" VerticalAlignment="Top" Width="28" Source="Assets/writePage/icon_write.png" Stretch="None"/>
+    		<TextBlock HorizontalAlignment="Center" Height="28" Margin="59,21,224,16" TextWrapping="Wrap" Text="Write" VerticalAlignment="Top" Width="117" Foreground="#FF323232" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontSize="24" FontWeight="Bold"/>
+    		<TextBox x:Name="TBox_MainTitle" HorizontalAlignment="Center" Height="49" Margin="23,0,23,7" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="358" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontWeight="Bold" Foreground="#FF646464" BorderBrush="{x:Null}" Background="White" PlaceholderText="Insert MainTitle" Padding="7,4,8,0"/>
+    	</Grid>
+    	<GridView x:ConnectionId='2' x:Name="GView_WritePage_Pre" HorizontalAlignment="Left" Height="403" Margin="0,116,0,0" VerticalAlignment="Top" Width="400" IsItemClickEnabled="True"                                          >
+    		<GridView.Resources>
+    			<DataTemplate x:Key="DataTemplate1"/>
+    			<DataTemplate x:Key="DataTemplate2">
+    				<Grid x:Name="Grid_Back" d:DesignWidth="318.667" d:DesignHeight="67.167" Width="400" Height="{Binding Height_Back}">
+    					<Grid.Background>
+    						<ImageBrush Stretch="None" ImageSource="{Binding Img_Back}"/>
+    					</Grid.Background>
+    					<Grid x:Name="Grid_Content" HorizontalAlignment="Center" Height="69" VerticalAlignment="Top" Width="356" Margin="22,0" Background="White" Visibility="{Binding Visible_Content}">
+    						<TextBox x:Name="TBox_Title" HorizontalAlignment="Left" Height="37" Margin="0" TextWrapping="Wrap" Text="{Binding Text_Title}" VerticalAlignment="Top" Width="354" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontWeight="Bold" Foreground="#FF646464" BorderBrush="{x:Null}" Background="{x:Null}" IsHitTestVisible="False"/>
+    						<TextBox x:Name="TBox_Content" HorizontalAlignment="Left" Height="{Binding Height_Content}" Margin="0,35,0,0" TextWrapping="Wrap" Text="{Binding Text_Content}" VerticalAlignment="Top" Width="354" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontWeight="Bold" Foreground="#FF646464" FontSize="13.333" Background="{x:Null}" BorderBrush="{x:Null}" Padding="7,8,8,0" IsHitTestVisible="False"/>
+    					</Grid>
+    				</Grid>
+    			</DataTemplate>
+    			<ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+    				<StackPanel/>
+    			</ItemsPanelTemplate>
+    		</GridView.Resources>
+    		<GridView.ItemsPanel>
+    			<StaticResource ResourceKey="ItemsPanelTemplate1"/>
+    		</GridView.ItemsPanel>
+    		<GridView.ItemTemplate>
+    			<StaticResource ResourceKey="DataTemplate2"/>
+    		</GridView.ItemTemplate>
+    	</GridView>
+
+    </Grid>
+</Page>
+

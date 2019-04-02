@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-CO39C5FH8Q5</Machine>
+    <WindowsUser>marsm_000</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>2903bdd7-6238-4738-9fcd-530b31e07b2c</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\voice.exe">
+      <PackagePath>voice.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\voice.exe.config">
+      <PackagePath>voice.exe.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\VoiceBerry_2\VoiceBerry_\packages\WindowsAzure.MobileServices.1.3.1\lib\wpa81\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\VoiceBerry_2\VoiceBerry_\packages\WindowsAzure.MobileServices.1.3.1\lib\wpa81\Microsoft.WindowsAzure.Mobile.Ext.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\VoiceBerry_2\VoiceBerry_\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\VoiceBerry_2\VoiceBerry_\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\VoiceBerry_2\VoiceBerry_\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\donator_optionbox_format\donator_optionbox_format.png">
+      <PackagePath>Assets\donator_optionbox_format\donator_optionbox_format.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\donator_optionbox_format\gener_female_icon.png">
+      <PackagePath>Assets\donator_optionbox_format\gener_female_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\donator_optionbox_format\gener_male_icon.png">
+      <PackagePath>Assets\donator_optionbox_format\gener_male_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\donator_optionbox_format\recording_wave.png">
+      <PackagePath>Assets\donator_optionbox_format\recording_wave.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\file_line_w.png">
+      <PackagePath>Assets\filelist\file_line_w.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Intro_Login\idbox.png">
+      <PackagePath>Assets\Intro_Login\idbox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Intro_Login\login_back.png">
+      <PackagePath>Assets\Intro_Login\login_back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Intro_Login\pwbox.png">
+      <PackagePath>Assets\Intro_Login\pwbox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Intro_Login\signinBox.png">
+      <PackagePath>Assets\Intro_Login\signinBox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\maidonator_main\main_female_icon.png">
+      <PackagePath>Assets\maidonator_main\main_female_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\maidonator_main\main_male_icon.png">
+      <PackagePath>Assets\maidonator_main\main_male_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\maidonator_main\peedbox.png">
+      <PackagePath>Assets\maidonator_main\peedbox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\asking_donatelist\asking_line.png">
+      <PackagePath>Assets\asking_donatelist\asking_line.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\asking_donatelist\berry_play.png">
+      <PackagePath>Assets\asking_donatelist\berry_play.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\asking_donatelist\berry_stop.png">
+      <PackagePath>Assets\asking_donatelist\berry_stop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\asking_donatelist\donator_profile.png">
+      <PackagePath>Assets\asking_donatelist\donator_profile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\asking_donatelist\icon_askingdocu.png">
+      <PackagePath>Assets\asking_donatelist\icon_askingdocu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\berry\berry.png">
+      <PackagePath>Assets\berry\berry.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\filelist.png">
+      <PackagePath>Assets\filelist\filelist.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\filelists.png">
+      <PackagePath>Assets\filelist\filelists.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\file_green.png">
+      <PackagePath>Assets\filelist\file_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\file_line_400x39.png">
+      <PackagePath>Assets\filelist\file_line_400x39.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\file_more.png">
+      <PackagePath>Assets\filelist\file_more.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\file_plus.png">
+      <PackagePath>Assets\filelist\file_plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\file_white.png">
+      <PackagePath>Assets\filelist\file_white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\voice_box_green.png">
+      <PackagePath>Assets\filelist\voice_box_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\airplane.png">
+      <PackagePath>Assets\history_page\airplane.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\arrow.png">
+      <PackagePath>Assets\history_page\arrow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\littleprince.png">
+      <PackagePath>Assets\history_page\littleprince.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\tree_1.png">
+      <PackagePath>Assets\history_page\tree_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\tree_1_next.png">
+      <PackagePath>Assets\history_page\tree_1_next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\tree_2.png">
+      <PackagePath>Assets\history_page\tree_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\tree_3.png">
+      <PackagePath>Assets\history_page\tree_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\tree_4.png">
+      <PackagePath>Assets\history_page\tree_4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\icon_middle\docu_click.png">
+      <PackagePath>Assets\icon_middle\docu_click.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\icon_middle\file_click.png">
+      <PackagePath>Assets\icon_middle\file_click.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\icon_middle\ms_click.png">
+      <PackagePath>Assets\icon_middle\ms_click.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\logo_1차_골라쓰세용\Logo_line_2_png.png">
+      <PackagePath>Assets\logo_1차_골라쓰세용\Logo_line_2_png.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\logo_1차_골라쓰세용\Logo_line_png.png">
+      <PackagePath>Assets\logo_1차_골라쓰세용\Logo_line_png.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\logo_1차_골라쓰세용\Logo_white_png.png">
+      <PackagePath>Assets\logo_1차_골라쓰세용\Logo_white_png.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\maintext_profile1.png">
+      <PackagePath>Assets\main_textbox\maintext_profile1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\maintext_profile2.png">
+      <PackagePath>Assets\main_textbox\maintext_profile2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\maintext_profile3.png">
+      <PackagePath>Assets\main_textbox\maintext_profile3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\maintext_profile4.png">
+      <PackagePath>Assets\main_textbox\maintext_profile4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\profile_grandma.png">
+      <PackagePath>Assets\main_textbox\profile_grandma.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\profile_woman.png">
+      <PackagePath>Assets\main_textbox\profile_woman.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\menu_bottonline\memu_bottomline.png">
+      <PackagePath>Assets\menu_bottonline\memu_bottomline.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\mypage_logotypo\VoiceBerry_typo_w_123x14.png">
+      <PackagePath>Assets\mypage_logotypo\VoiceBerry_typo_w_123x14.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_listen2.png">
+      <PackagePath>Assets\my_listen2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_listen\my_listen.png">
+      <PackagePath>Assets\my_listen\my_listen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_listen\my_listen_fill.png">
+      <PackagePath>Assets\my_listen\my_listen_fill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\MY_middleicon\docu_off.png">
+      <PackagePath>Assets\MY_middleicon\docu_off.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\MY_middleicon\docu_on.png">
+      <PackagePath>Assets\MY_middleicon\docu_on.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\MY_middleicon\file_off.png">
+      <PackagePath>Assets\MY_middleicon\file_off.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\MY_middleicon\file_on.png">
+      <PackagePath>Assets\MY_middleicon\file_on.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\MY_middleicon\message_off.png">
+      <PackagePath>Assets\MY_middleicon\message_off.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\MY_middleicon\message_on.png">
+      <PackagePath>Assets\MY_middleicon\message_on.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_number\followers.png">
+      <PackagePath>Assets\my_number\followers.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_number\following.png">
+      <PackagePath>Assets\my_number\following.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_number\request.png">
+      <PackagePath>Assets\my_number\request.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\My_sentence\my_sentence.png">
+      <PackagePath>Assets\My_sentence\my_sentence.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\My_sentence\my_sentence_2.png">
+      <PackagePath>Assets\My_sentence\my_sentence_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_docu.png">
+      <PackagePath>Assets\my_tapmenu\my_menu_docu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_docu_fill.png">
+      <PackagePath>Assets\my_tapmenu\my_menu_docu_fill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_file.png">
+      <PackagePath>Assets\my_tapmenu\my_menu_file.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_file_fill.png">
+      <PackagePath>Assets\my_tapmenu\my_menu_file_fill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_message.png">
+      <PackagePath>Assets\my_tapmenu\my_menu_message.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_message_fill.png">
+      <PackagePath>Assets\my_tapmenu\my_menu_message_fill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu_log\my_menu_log.png">
+      <PackagePath>Assets\my_tapmenu_log\my_menu_log.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu_log\my_menu_log_fill.png">
+      <PackagePath>Assets\my_tapmenu_log\my_menu_log_fill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\new_back.png">
+      <PackagePath>Assets\new_back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\notice_box.png">
+      <PackagePath>Assets\notice_box.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\pad_add.png">
+      <PackagePath>Assets\pad\pad_add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\pad_black.png">
+      <PackagePath>Assets\pad\pad_black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\pad_color.png">
+      <PackagePath>Assets\pad\pad_color.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\pad_object.png">
+      <PackagePath>Assets\pad\pad_object.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\playbar_back.png">
+      <PackagePath>Assets\pad\playbar_back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\scriptbar.png">
+      <PackagePath>Assets\pad\scriptbar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad_test\pad_test.png">
+      <PackagePath>Assets\pad_test\pad_test.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad_test\pad_test2.png">
+      <PackagePath>Assets\pad_test\pad_test2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\profile\profile_gil.png">
+      <PackagePath>Assets\profile\profile_gil.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\profile\profile_jason.png">
+      <PackagePath>Assets\profile\profile_jason.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\profile\profile_pic.png">
+      <PackagePath>Assets\profile\profile_pic.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\profile\profile_sam.png">
+      <PackagePath>Assets\profile\profile_sam.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\profile\speechbuble.png">
+      <PackagePath>Assets\profile\speechbuble.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\1.png">
+      <PackagePath>Assets\recordPage\1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\10.png">
+      <PackagePath>Assets\recordPage\10.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\11.png">
+      <PackagePath>Assets\recordPage\11.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\12.png">
+      <PackagePath>Assets\recordPage\12.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\13.png">
+      <PackagePath>Assets\recordPage\13.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\14.png">
+      <PackagePath>Assets\recordPage\14.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\15.png">
+      <PackagePath>Assets\recordPage\15.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\16.png">
+      <PackagePath>Assets\recordPage\16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\17.png">
+      <PackagePath>Assets\recordPage\17.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\18.png">
+      <PackagePath>Assets\recordPage\18.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\19.png">
+      <PackagePath>Assets\recordPage\19.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\2.png">
+      <PackagePath>Assets\recordPage\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\20.png">
+      <PackagePath>Assets\recordPage\20.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\21.png">
+      <PackagePath>Assets\recordPage\21.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\22.png">
+      <PackagePath>Assets\recordPage\22.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\23.png">
+      <PackagePath>Assets\recordPage\23.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\24.png">
+      <PackagePath>Assets\recordPage\24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\3.png">
+      <PackagePath>Assets\recordPage\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\4.png">
+      <PackagePath>Assets\recordPage\4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\5.png">
+      <PackagePath>Assets\recordPage\5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\6.png">
+      <PackagePath>Assets\recordPage\6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\7.png">
+      <PackagePath>Assets\recordPage\7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\8.png">
+      <PackagePath>Assets\recordPage\8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\9.png">
+      <PackagePath>Assets\recordPage\9.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\scriptbox\scriptbox_gray.png">
+      <PackagePath>Assets\scriptbox\scriptbox_gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\scriptbox\scriptbox_one.png">
+      <PackagePath>Assets\scriptbox\scriptbox_one.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\script_boxformat.png">
+      <PackagePath>Assets\script_boxformat.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\able_history_gray.png">
+      <PackagePath>Assets\top_icon_37x37\able_history_gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\able_history_green.png">
+      <PackagePath>Assets\top_icon_37x37\able_history_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\able_history_w.png">
+      <PackagePath>Assets\top_icon_37x37\able_history_w.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\able_main_gray.png">
+      <PackagePath>Assets\top_icon_37x37\able_main_gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\able_main_green.png">
+      <PackagePath>Assets\top_icon_37x37\able_main_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\able_main_w.png">
+      <PackagePath>Assets\top_icon_37x37\able_main_w.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_main_gray.png">
+      <PackagePath>Assets\top_icon_37x37\dis_main_gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_main_green.png">
+      <PackagePath>Assets\top_icon_37x37\dis_main_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_main_w.png">
+      <PackagePath>Assets\top_icon_37x37\dis_main_w.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_my_gray.png">
+      <PackagePath>Assets\top_icon_37x37\dis_my_gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_my_green.png">
+      <PackagePath>Assets\top_icon_37x37\dis_my_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_my_w.png">
+      <PackagePath>Assets\top_icon_37x37\dis_my_w.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_notice_gray.png">
+      <PackagePath>Assets\top_icon_37x37\dis_notice_gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_notice_green.png">
+      <PackagePath>Assets\top_icon_37x37\dis_notice_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_notice_w.png">
+      <PackagePath>Assets\top_icon_37x37\dis_notice_w.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_voicelist_gray.png">
+      <PackagePath>Assets\top_icon_37x37\dis_voicelist_gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_voicelist_green.png">
+      <PackagePath>Assets\top_icon_37x37\dis_voicelist_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\dis_voicelist_w.png">
+      <PackagePath>Assets\top_icon_37x37\dis_voicelist_w.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\circle_gray.png">
+      <PackagePath>Assets\writePage\circle_gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\circle_gray_5050.png">
+      <PackagePath>Assets\writePage\circle_gray_5050.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\circle_green.png">
+      <PackagePath>Assets\writePage\circle_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\circle_green_5050.png">
+      <PackagePath>Assets\writePage\circle_green_5050.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\circle_w.png">
+      <PackagePath>Assets\writePage\circle_w.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\circle_w_5050.png">
+      <PackagePath>Assets\writePage\circle_w_5050.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\follow_line.png">
+      <PackagePath>Assets\writePage\follow_line.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\icon_write.png">
+      <PackagePath>Assets\writePage\icon_write.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\scriptbox_add.png">
+      <PackagePath>Assets\writePage\scriptbox_add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\scriptbox_line.png">
+      <PackagePath>Assets\writePage\scriptbox_line.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\search.png">
+      <PackagePath>Assets\writePage\search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\search_3030.png">
+      <PackagePath>Assets\writePage\search_3030.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\writeoption_box.png">
+      <PackagePath>Assets\writePage\writeoption_box.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Intro_Login\intro1.jpg">
+      <PackagePath>Assets\Intro_Login\intro1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Intro_Login\login1.jpg">
+      <PackagePath>Assets\Intro_Login\login1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\0%25.jpg">
+      <PackagePath>Assets\0%25.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\activity_test.jpg">
+      <PackagePath>Assets\activity_test.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\background_jpgfile\back_Gray_40059.jpg">
+      <PackagePath>Assets\background_jpgfile\back_Gray_40059.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\background_jpgfile\back_white_400521.jpg">
+      <PackagePath>Assets\background_jpgfile\back_white_400521.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\black.jpg">
+      <PackagePath>Assets\black.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\blue.jpg">
+      <PackagePath>Assets\blue.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\brown.jpg">
+      <PackagePath>Assets\brown.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\filelist.jpg">
+      <PackagePath>Assets\filelist\filelist.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\filelist\filelists.jpg">
+      <PackagePath>Assets\filelist\filelists.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\follow.jpg">
+      <PackagePath>Assets\follow.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\gray.jpg">
+      <PackagePath>Assets\gray.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\back_home.jpg">
+      <PackagePath>Assets\history_page\back_home.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\back_sky.jpg">
+      <PackagePath>Assets\history_page\back_sky.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\back_space.jpg">
+      <PackagePath>Assets\history_page\back_space.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\history_home.jpg">
+      <PackagePath>Assets\history_page\history_home.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\history_sky.jpg">
+      <PackagePath>Assets\history_page\history_sky.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\history_space.jpg">
+      <PackagePath>Assets\history_page\history_space.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\info_1.jpg">
+      <PackagePath>Assets\history_page\info_1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\info_2.jpg">
+      <PackagePath>Assets\history_page\info_2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\history_page\tree_grow.jpg">
+      <PackagePath>Assets\history_page\tree_grow.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\login\login_login.jpg">
+      <PackagePath>Assets\login\login_login.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\login\login_signup.jpg">
+      <PackagePath>Assets\login\login_signup.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\main_textbox.jpg">
+      <PackagePath>Assets\main_textbox\main_textbox.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\main_textbox_1.jpg">
+      <PackagePath>Assets\main_textbox\main_textbox_1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\main_textbox_2.jpg">
+      <PackagePath>Assets\main_textbox\main_textbox_2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\main_textbox_3.jpg">
+      <PackagePath>Assets\main_textbox\main_textbox_3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\main_textbox\main_textbox_4.jpg">
+      <PackagePath>Assets\main_textbox\main_textbox_4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\menu_bottonline\memu_bottomline.jpg">
+      <PackagePath>Assets\menu_bottonline\memu_bottomline.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_main_green.jpg">
+      <PackagePath>Assets\Menu_icon\icon_main_green.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_main_half.jpg">
+      <PackagePath>Assets\Menu_icon\icon_main_half.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_main_line.jpg">
+      <PackagePath>Assets\Menu_icon\icon_main_line.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_my_green.jpg">
+      <PackagePath>Assets\Menu_icon\icon_my_green.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_my_half.jpg">
+      <PackagePath>Assets\Menu_icon\icon_my_half.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_my_line.jpg">
+      <PackagePath>Assets\Menu_icon\icon_my_line.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_notice_green.jpg">
+      <PackagePath>Assets\Menu_icon\icon_notice_green.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_notice_half.jpg">
+      <PackagePath>Assets\Menu_icon\icon_notice_half.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_notice_line.jpg">
+      <PackagePath>Assets\Menu_icon\icon_notice_line.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_pad_green.jpg">
+      <PackagePath>Assets\Menu_icon\icon_pad_green.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_pad_half.jpg">
+      <PackagePath>Assets\Menu_icon\icon_pad_half.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Menu_icon\icon_pad_line.jpg">
+      <PackagePath>Assets\Menu_icon\icon_pad_line.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\mypage_logotypo\mypage_580400_result.jpg">
+      <PackagePath>Assets\mypage_logotypo\mypage_580400_result.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_fileline\my_fileline.jpg">
+      <PackagePath>Assets\my_fileline\my_fileline.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\My_sentence\my_sentence.jpg">
+      <PackagePath>Assets\My_sentence\my_sentence.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_docu.jpg">
+      <PackagePath>Assets\my_tapmenu\my_menu_docu.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_docu_fill.jpg">
+      <PackagePath>Assets\my_tapmenu\my_menu_docu_fill.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_file.jpg">
+      <PackagePath>Assets\my_tapmenu\my_menu_file.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_file_fill.jpg">
+      <PackagePath>Assets\my_tapmenu\my_menu_file_fill.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_message.jpg">
+      <PackagePath>Assets\my_tapmenu\my_menu_message.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_menu_message_fill.jpg">
+      <PackagePath>Assets\my_tapmenu\my_menu_message_fill.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\my_tapmenu\my_tapmenu_layout.jpg">
+      <PackagePath>Assets\my_tapmenu\my_tapmenu_layout.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\new_logo.jpg">
+      <PackagePath>Assets\new_logo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\orange.jpg">
+      <PackagePath>Assets\orange.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\padpage.jpg">
+      <PackagePath>Assets\pad\padpage.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\padpage_2.jpg">
+      <PackagePath>Assets\pad\padpage_2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\padpage_play.jpg">
+      <PackagePath>Assets\pad\padpage_play.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad\padpage_script.jpg">
+      <PackagePath>Assets\pad\padpage_script.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad_back.jpg">
+      <PackagePath>Assets\pad_back.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad_change.jpg">
+      <PackagePath>Assets\pad_change.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad_change3.jpg">
+      <PackagePath>Assets\pad_change3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Pad_pad\pad_pad.jpg">
+      <PackagePath>Assets\Pad_pad\pad_pad.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Pad_pad\pad_pad_bigsize.jpg">
+      <PackagePath>Assets\Pad_pad\pad_pad_bigsize.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Pad_pad\pad_pad_bigsize_press.jpg">
+      <PackagePath>Assets\Pad_pad\pad_pad_bigsize_press.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Pad_pad\pad_pad_bigsize_pressed.jpg">
+      <PackagePath>Assets\Pad_pad\pad_pad_bigsize_pressed.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad_rowpad\pad_rowpad.jpg">
+      <PackagePath>Assets\pad_rowpad\pad_rowpad.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad_rowpad\pad_rowpad_empty.jpg">
+      <PackagePath>Assets\pad_rowpad\pad_rowpad_empty.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\page_logo.jpg">
+      <PackagePath>Assets\page_logo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\radio.jpg">
+      <PackagePath>Assets\radio.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\recordPage\donator_record.jpg">
+      <PackagePath>Assets\recordPage\donator_record.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\pad_rowpad\red.jpg">
+      <PackagePath>Assets\pad_rowpad\red.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\top_icon_37x37\pad_back.jpg">
+      <PackagePath>Assets\top_icon_37x37\pad_back.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\voicelispage.jpg">
+      <PackagePath>Assets\voicelispage.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\write_page.jpg">
+      <PackagePath>Assets\writePage\write_page.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\writePage\write_page_option.jpg">
+      <PackagePath>Assets\writePage\write_page_option.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\write_page_option2.jpg">
+      <PackagePath>Assets\write_page_option2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\yellow.jpg">
+      <PackagePath>Assets\yellow.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-Bold.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-Bold.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-BoldCond.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-BoldCond.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-BoldCondIt.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-BoldCondIt.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-BoldIt.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-BoldIt.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-Cond.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-Cond.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-CondIt.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-CondIt.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-It.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-It.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-Regular.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-Regular.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-Semibold.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-Semibold.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\Assets\Myriad Pro\MyriadPro-SemiboldIt.otf">
+      <PackagePath>Assets\Myriad Pro\MyriadPro-SemiboldIt.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\ActivityPage.xbf">
+      <PackagePath>ActivityPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\AskingListPage.xbf">
+      <PackagePath>AskingListPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\btn5.xbf">
+      <PackagePath>btn5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\Intro.xbf">
+      <PackagePath>Intro.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\LoginPage.xbf">
+      <PackagePath>LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\MainPage2.xbf">
+      <PackagePath>MainPage2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\MainPage3.xbf">
+      <PackagePath>MainPage3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\MyPage.xbf">
+      <PackagePath>MyPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\MyPage2.xbf">
+      <PackagePath>MyPage2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\MyPage2_Sub1.xbf">
+      <PackagePath>MyPage2_Sub1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\MyPage_Another_SubPage1.xbf">
+      <PackagePath>MyPage_Another_SubPage1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\MyPage_Sub1.xbf">
+      <PackagePath>MyPage_Sub1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\NoticePage_Another.xbf">
+      <PackagePath>NoticePage_Another.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\optionPage.xbf">
+      <PackagePath>optionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\PadPage.xbf">
+      <PackagePath>PadPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\PadPage_Desc.xbf">
+      <PackagePath>PadPage_Desc.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\PadPage_New.xbf">
+      <PackagePath>PadPage_New.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\PadPage_Sub1.xbf">
+      <PackagePath>PadPage_Sub1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\PadPage_Sub2.xbf">
+      <PackagePath>PadPage_Sub2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\ReadPage.xbf">
+      <PackagePath>ReadPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\RecodePage.xbf">
+      <PackagePath>RecodePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\RecodePage_Sub1.xbf">
+      <PackagePath>RecodePage_Sub1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\RecodePage_Sub2.xbf">
+      <PackagePath>RecodePage_Sub2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\SpeechPage.xbf">
+      <PackagePath>SpeechPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\SpeechPage_Sub1.xbf">
+      <PackagePath>SpeechPage_Sub1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\VoiceListPage.xbf">
+      <PackagePath>VoiceListPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\writePage.xbf">
+      <PackagePath>writePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\WritePage_Pre.xbf">
+      <PackagePath>WritePage_Pre.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\voice.xr.xml">
+      <PackagePath>voice.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\marsm_000\Documents\Visual Studio 2013\Projects\voice2\voice\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

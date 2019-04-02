@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="voice.SpeechPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Icon="Accept" Label="appbarbutton" Click="AppBarButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid x:Name="Grid_SpeechPage" Margin="0,0,0,515">
+            <Image x:Name="Img_Icon" HorizontalAlignment="Left" Height="28" Margin="28,22,0,0" VerticalAlignment="Top" Width="28" Source="Assets/asking_donatelist/icon_askingdocu.png" Stretch="None"/>
+            <TextBlock x:Name="TBox_Title" HorizontalAlignment="Center" Height="28" Margin="59,21,72,16" TextWrapping="Wrap" Text="Speech" VerticalAlignment="Center" Width="269" Foreground="#FF323232" FontFamily="Arial" FontSize="20" FontWeight="Bold"/>
+        </Grid>
+
+        <GridView x:Name="GView_SpeechPage" HorizontalAlignment="Left" Height="455" Margin="0,65,0,0" VerticalAlignment="Top" Width="400" ItemClick="GView_SpeechPage_ItemClick" IsItemClickEnabled="True">
+            <GridView.Resources>
+                <DataTemplate x:Key="DataTemplate1"/>
+                <DataTemplate x:Key="DataTemplate2">
+                    <StackPanel Height="50" Width="400">
+                        <Grid x:Name="Grid_Voice_Back" Width="400" Height="50">
+                            <Grid.Background>
+                                <ImageBrush Stretch="None" ImageSource="Assets/asking_donatelist/asking_line.png"/>
+                            </Grid.Background>
+                            <Image x:Name="Img_Profile_Copy" HorizontalAlignment="Left" Height="30" Margin="24,9,0,0" VerticalAlignment="Top" Width="30" Stretch="None" Source="{Binding Img_Source2}"/>
+                            <TextBlock x:Name="TBox_Name" HorizontalAlignment="Center" Height="15" Margin="73,17.5,208,18" TextWrapping="Wrap" VerticalAlignment="Center" Width="119" Foreground="Black" FontFamily="Arial" FontSize="13.333" FontWeight="Bold" Text="{Binding Name}"/>
+                            <TextBlock x:Name="TBox_Date" HorizontalAlignment="Center" Height="15" Margin="197,20,150,15" TextWrapping="Wrap" VerticalAlignment="Center" Width="53" Foreground="#FF464646" FontFamily="Arial" FontSize="9.333" Text="{Binding Date}"/>
+                            <TextBlock x:Name="TBox_Id" HorizontalAlignment="Center" Height="15" Margin="310,20,25,15" TextWrapping="Wrap" VerticalAlignment="Center" Width="65" Foreground="#FF007EC7" FontFamily="Arial" FontSize="9.333" FontWeight="Bold" Text="{Binding Id}"/>
+                            <Image x:Name="Img_Profile" HorizontalAlignment="Left" Height="40" Margin="267,5,0,0" VerticalAlignment="Top" Width="40" Source="{Binding Img_Source}" Stretch="Fill"/>
+                        </Grid>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.Resources>
+            <GridView.ItemTemplate>
+                <StaticResource ResourceKey="DataTemplate2"/>
+            </GridView.ItemTemplate>
+        </GridView>
+        <Canvas x:Name="Canvas_SpeechListPage" Margin="0,0,0,1">
+            <Grid x:Name="Grid_Menu" Height="579" Canvas.Left="402" Width="271" Background="White">
+                <Frame x:Name="Frame_Speech" Content="Frame" HorizontalAlignment="Left" Height="579" VerticalAlignment="Top" Width="271" Margin="1,0,-1,0" Background="White"/>
+            </Grid>
+        </Canvas>
+
+    </Grid>
+</Page>

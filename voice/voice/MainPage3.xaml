@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="voice.MainPage3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="Grid_Main3" Background="White">
+    	<Grid HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="400" Background="White">
+    		<StackPanel HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="400">
+    			<Grid Height="60">
+    				<Grid.Background>
+    					<ImageBrush ImageSource="Assets/background_jpgfile/back_Gray_40059.jpg"/>
+    				</Grid.Background>
+    				<Grid.ColumnDefinitions>
+    					<ColumnDefinition/>
+    				</Grid.ColumnDefinitions>
+    				<Image x:Name="Image_btn1" HorizontalAlignment="Left" Height="40" PointerPressed="Image_btn1_PointerPressed" PointerReleased="Image_btn1_PointerReleased" PointerExited="Image_btn1_PointerExited" Width="40" Margin="220,10,0,10" Source="Assets/top_icon_37x37/dis_main_w.png" Stretch="None"/>
+    				<Image x:Name="Image_btn2" HorizontalAlignment="Left" Height="40" Margin="310,10,0,10" PointerExited="Image_btn2_PointerExited" PointerPressed="Image_btn2_PointerPressed" PointerReleased="Image_btn2_PointerReleased" Width="40" Stretch="None" Source="Assets/top_icon_37x37/dis_voicelist_w.png"/>
+    				<Image x:Name="Image_btn3" HorizontalAlignment="Left" Height="40" Margin="265,10,0,10" PointerReleased="Image_btn3_PointerReleased" PointerExited="Image_btn3_PointerExited" PointerPressed="Image_btn3_PointerPressed" Width="40" Stretch="None" Source="Assets/top_icon_37x37/dis_my_w.png"/>
+    				<Image x:Name="Image_btn4" HorizontalAlignment="Left" Height="40" Margin="355,10,0,10" Width="40" Source="Assets/top_icon_37x37/dis_notice_w.png" Stretch="None" PointerPressed="Image_btn4_PointerPressed" PointerReleased="Image_btn4_PointerReleased" PointerExited="Image_btn4_PointerExited"/>
+    				<Image HorizontalAlignment="Left" Height="16" Width="133" Source="Assets/mypage_logotypo/VoiceBerry_typo_w_123x14.png" Stretch="None" Margin="21,22,0,22"/>
+                </Grid>
+    		</StackPanel>
+    		<Frame x:Name="Frame_Main3" Content="" HorizontalAlignment="Left" Height="580" Margin="0,60,0,0" VerticalAlignment="Top" Width="400">
+    			<Frame.Background>
+    				<ImageBrush Stretch="Fill" ImageSource="Assets/background_jpgfile/back_white_400521.jpg"/>
+    			</Frame.Background>
+    		</Frame>
+    	</Grid>
+
+    </Grid>
+</Page>

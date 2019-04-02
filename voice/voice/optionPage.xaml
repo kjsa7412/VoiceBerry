@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="voice.optionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Page.BottomAppBar>
+		<CommandBar>
+			<AppBarButton Icon="Accept" Label="Complete" Click="CompleteBtn"/>
+		</CommandBar>
+	</Page.BottomAppBar>
+
+    <Grid Margin="0,0.333,0,0" PointerReleased="searchBtn_PointerReleased" VerticalAlignment="Top" HorizontalAlignment="Left" Height="520" Width="400">
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="0*"/>
+    		<ColumnDefinition/>
+    	</Grid.ColumnDefinitions>
+    	<Grid.Background>
+    		<ImageBrush Stretch="None" ImageSource="Assets/writePage/writeoption_box.png"/>
+    	</Grid.Background>
+        <GridView x:Name="GView_FollowList" HorizontalAlignment="Left" Height="345" Margin="268,175,0,0" VerticalAlignment="Top" Width="132" Grid.ColumnSpan="2" Visibility="Collapsed">
+			<GridView.Resources>
+				<DataTemplate x:Key="DataTemplate1">
+					<Grid x:Name="Grid_Friend" Width="132" Height="30">
+						<Image x:Name="Img_Chk" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Assets/writePage/circle_w.png" Stretch="None" NineGrid="0"/>
+						<Image x:Name="Img_Profile" HorizontalAlignment="Left" Height="30" Margin="30,0,0,0" VerticalAlignment="Top" Width="30" Source="{Binding Image}" NineGrid="0"/>
+						<TextBlock x:Name="TBox_Name" HorizontalAlignment="Left" Height="30" Margin="60,0,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="72" Padding="6,9.5,0,0" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontSize="9.333" Foreground="#FF111D5A"/>
+					</Grid>
+				</DataTemplate>
+			</GridView.Resources>
+			<GridView.ItemTemplate>
+				<StaticResource ResourceKey="DataTemplate1"/>
+			</GridView.ItemTemplate>
+		</GridView>
+        <TextBox x:Name="TBox_Age_To" HorizontalAlignment="Left" Height="20" Margin="26,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="11" TextAlignment="Center" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Padding="7,7,8,0" Grid.ColumnSpan="2" Foreground="#FF323232"/>
+        <TextBox x:Name="TBox_Age_From" HorizontalAlignment="Left" Height="20" Margin="155,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="11" TextAlignment="Center" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Padding="7,7,8,0" Grid.ColumnSpan="2" Foreground="#FF323232"/>
+        <Image x:Name="Img_Male" HorizontalAlignment="Left" Height="30" Margin="61,50,0,0" VerticalAlignment="Top" Width="30" Source="Assets/writePage/circle_w.png" Stretch="None" NineGrid="0" Grid.ColumnSpan="2" PointerPressed="Img_Male_PointerPressed"/>
+        <Image x:Name="Img_Female" HorizontalAlignment="Left" Height="30" Margin="132,50,0,0" VerticalAlignment="Top" Width="30" Source="Assets/writePage/circle_green.png" Stretch="None" NineGrid="0" Grid.ColumnSpan="2" PointerReleased="Img_Male_PointerPressed" IsRightTapEnabled="False"/>
+        <TextBox x:Name="TBox_Audience" HorizontalAlignment="Left" Height="20" Margin="25,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" FontSize="13.333" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" Background="{x:Null}" BorderBrush="{x:Null}" Padding="7,5,8,0" PlaceholderText="" Grid.ColumnSpan="2" Foreground="#FF323232" ToolTipService.ToolTip="For whom?"/>
+        <TextBox x:Name="TBox_Purpose" HorizontalAlignment="Left" Height="72" Margin="26,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" FontSize="13.333" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" Background="{x:Null}" BorderBrush="{x:Null}" Padding="7,5,8,0" PlaceholderText="" Grid.ColumnSpan="2" Foreground="#FF323232"/>
+        <TextBox x:Name="TBox_Additional" HorizontalAlignment="Left" Height="108" Margin="26,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" FontSize="13.333" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" Background="{x:Null}" BorderBrush="{x:Null}" Padding="7,5,8,0" PlaceholderText="" Grid.ColumnSpan="2" Foreground="#FF323232"/>
+        <TextBox x:Name="TBox_Search" HorizontalAlignment="Left" Height="20" Margin="279,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontSize="13.333" TextAlignment="Center" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Padding="7,3,8,0" Grid.ColumnSpan="2"/>
+        <Image x:Name="Img_Search" HorizontalAlignment="Left" Height="30" Margin="361,72,0,0" VerticalAlignment="Top" Width="30" Source="Assets/writePage/search.png" Stretch="None" NineGrid="0" Grid.ColumnSpan="2"/>
+        <Image x:Name="Img_Public" HorizontalAlignment="Left" Height="30" Margin="269,106,0,0" VerticalAlignment="Top" Width="30" Source="Assets/writePage/circle_w.png" Stretch="None" NineGrid="0" Grid.ColumnSpan="2" PointerPressed="Img_Public_PointerPressed"/>
+        <Image x:Name="Img_AllFriends" HorizontalAlignment="Left" Height="30" Margin="269,139,0,0" VerticalAlignment="Top" Width="30" Source="Assets/writePage/circle_w.png" Stretch="None" NineGrid="0" Grid.ColumnSpan="2" PointerPressed="Img_AllFriends_PointerPressed"/>
+        <Grid x:Name="Grid_Friend1" Grid.ColumnSpan="2" Margin="269,170,-1,320">
+        	<Image x:Name="Img_Chk" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Assets/writePage/circle_w.png" Stretch="None" NineGrid="0" PointerReleased="Img_Chk_PointerReleased"/>
+        	<Image x:Name="Img_Profile" HorizontalAlignment="Left" Height="30" Margin="30,0,0,0" VerticalAlignment="Top" Width="30" NineGrid="0" Source="Assets/profile/profile_sam.png"/>
+        	<TextBlock x:Name="TBox_Name" HorizontalAlignment="Left" Height="30" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Padding="6,9.5,0,0" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontSize="9.333" Foreground="#FF111D5A" Text="Hyenmin"/>
+        </Grid>
+        <Grid x:Name="Grid_Friend2" Grid.ColumnSpan="2" Margin="269,205,-1,285">
+        	<Image x:Name="Img_Chk1" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Assets/writePage/circle_w.png" Stretch="None" NineGrid="0" PointerReleased="Img_Chk1_PointerReleased"/>
+        	<Image x:Name="Img_Profile1" HorizontalAlignment="Left" Height="30" Margin="29,0,0,0" VerticalAlignment="Top" Width="30" NineGrid="0" Source="Assets/profile/profile_jason.png"/>
+        	<TextBlock x:Name="TBox_Name1" HorizontalAlignment="Left" Height="30" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Padding="6,9.5,0,0" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontSize="9.333" Foreground="#FF111D5A" Text="Kyungjin"/>
+        </Grid>
+    
+    </Grid>
+</Page>

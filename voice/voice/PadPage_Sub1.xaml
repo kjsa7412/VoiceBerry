@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="voice.PadPage_Sub1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+    	<GridView x:Name="GView_PadPage_Sub1" HorizontalAlignment="Left" Height="260" Margin="0" VerticalAlignment="Top" Width="400">
+    		<GridView.Resources>
+    			<DataTemplate x:Key="DataTemplate1">
+    				<StackPanel Height="65" Width="66.666666" Orientation="Horizontal">
+    					<Grid Width="66.66666666" Height="65">
+                            <Image x:Name="Image_Col1" Source="{Binding Image1}" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="65" Margin="1,1,0,0"/>
+                            <TextBlock x:Name="TBlock_Col1" Text="{Binding Name1}" HorizontalAlignment="Left" Height="15" Margin="1,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Foreground="Black" FontFamily="Trebuchet MS" FontSize="10.667" TextAlignment="Center" FontWeight="Bold"/>
+    					</Grid>
+    				</StackPanel>
+    			</DataTemplate>
+    		</GridView.Resources>
+    		<GridView.Background>
+    			<ImageBrush Stretch="Fill" ImageSource="Assets/pad_back.jpg"/>
+    		</GridView.Background>
+    		<GridView.ItemTemplate>
+    			<StaticResource ResourceKey="DataTemplate1"/>
+    		</GridView.ItemTemplate>
+    	</GridView>
+
+    </Grid>
+</Page>

@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="voice.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:voice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="Grid_Login_Root" Background="White">
+    	<Grid HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="400">
+    		<Grid.Background>
+    			<ImageBrush Stretch="None" ImageSource="Assets/Intro_Login/login_back.png"/>
+    		</Grid.Background>
+            <PasswordBox x:Name="Pbox_Pass" HorizontalAlignment="Left" Height="36" Margin="105,434,0,0" VerticalAlignment="Top" Width="193" BorderBrush="{x:Null}" PlaceholderText="Password" Opacity="0.8">
+            	<PasswordBox.Background>
+            		<ImageBrush Stretch="Fill" ImageSource="Assets/Intro_Login/pwbox.png"/>
+            	</PasswordBox.Background>
+            </PasswordBox>
+    		<TextBox x:Name="Tbox_Id" HorizontalAlignment="Left" Height="36" Margin="105,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" BorderBrush="{x:Null}" InputScope="AlphanumericFullWidth" PlaceholderText="Username" FontFamily="Trebuchet MS" Opacity="0.8">
+    			<TextBox.Background>
+    				<ImageBrush Stretch="Fill" ImageSource="Assets/Intro_Login/idbox.png"/>
+    			</TextBox.Background>
+    		</TextBox>
+    		<Image x:ConnectionId='1' x:Name="Image_Login" HorizontalAlignment="Left" Height="36" Margin="105,496,0,0" VerticalAlignment="Top" Width="193"                                                                                                                                     Stretch="None" Source="Assets/Intro_Login/signinBox.png"/>
+    		<Rectangle Fill="#26FFFFFF" HorizontalAlignment="Left" Height="1" Margin="69,561,0,0" Stroke="#59909090" VerticalAlignment="Top" Width="262" RenderTransformOrigin="0.5,0.5">
+    			<Rectangle.RenderTransform>
+    				<CompositeTransform ScaleY="-1"/>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<TextBlock HorizontalAlignment="Center" Height="28" Margin="168,579,154,0" TextWrapping="Wrap" Text="SIGN UP" VerticalAlignment="Top" Width="78" FontFamily="Assets/Myriad Pro/MyriadPro-Semibold.otf#Myriad Pro Light" FontSize="18.667" FontWeight="Bold"/>
+        </Grid>
+
+    </Grid>
+</Page>
+
